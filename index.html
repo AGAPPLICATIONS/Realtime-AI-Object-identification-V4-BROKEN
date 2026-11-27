@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Real Time Image Identification App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/ort.min.js"></script>
+  <script defer src="vendor/squeezenet-data.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header class="heading">
+    <h1>Real Time Image Identification App</h1>
+    <div class="heading_div">
+      SqueezeNet 1.1
+      <div class="heading_div2">Point your camera at one object at a time.</div>
+    </div>
+  </header>
+  <main>
+    <p class="resulttag">Object: <span id="resultname">—</span></p>
+    <p class="resulttag">Confidence: <span id="resultaccuracy">—</span></p>
+    <p id="status" role="status">Waiting for camera access…</p>
+    <video id="camera" width="250" height="250" muted playsinline aria-label="Live camera preview"></video>
+  </main>
+  <footer class="copy_right_footer">
+    &copy;A.G 2023<br>
+    <i>"I like mangoes lol"- Also Me, 2023</i>
+  </footer>
+</body>
+</html>
